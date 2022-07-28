@@ -18,7 +18,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import static org.junit.Assert.*;
-
+@WebMvcTest(HelloCircleController.class)
+@RunWith(SpringRunner.class)
 public class HelloCircleControllerTest {
     @Autowired
     MockMvc mockMvc;
